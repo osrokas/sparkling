@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparkling UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-block">
+          <span class="brand-kicker">Workspace</span>
+          <h1>Sparkling</h1>
+          <p>Your DATA and AI companion</p>
+        </div>
+
+        <nav class="menu" aria-label="Main navigation">
+          <button class="menu-link is-active" type="button" data-view="spark">
+            <!-- When i press Spark it should render on right-side panel this content of url /spark/jobs/ (proxied) -->
+            <span class="menu-title">Spark</span>
+          </button>
+          <button class="menu-link" type="button" data-view="uc">
+            <span class="menu-title">Unity Catalog</span>
+          </button>
+          <button class="menu-link" type="button" data-view="sql">
+            <span class="menu-title">SQL</span>
+          </button>
+          <button class="menu-link" type="button" data-view="mlflow">
+            <span class="menu-title">MLFlow</span>
+          </button>
+          <button class="menu-link" type="button" data-view="airflow">
+            <span class="menu-title">Airflow</span>
+          </button>
+          <button class="menu-link" type="button" data-view="superset">
+            <span class="menu-title">Superset</span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="status-dot"></div>
+        </div>
+      </aside>
+
+      <main class="content-panel">
+        <section id="content-body" class="content-body" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
