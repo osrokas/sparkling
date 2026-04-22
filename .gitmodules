@@ -1,3 +1,6 @@
 [submodule "unitycatalog"]
 	path = unitycatalog
 	url = git@github.com:osrokas/unitycatalog.git
+[submodule "airdags"]
+	path = airdags
+	url = git@github.com:osrokas/airdags.git
