@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Open first terminal for MLflow
+gnome-terminal -- bash -c "
+cd mlflow
+source .venv/bin/activate
+mlflow server
+exec bash
+"
+
+# Open second terminal for Node server
+gnome-terminal -- bash -c "
+node server
+exec bash
+"
