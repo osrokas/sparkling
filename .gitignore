@@ -4,3 +4,4 @@ package-lock.json
 mlflow.db
 uv.lock
 __pycache__
+yarn.lock
