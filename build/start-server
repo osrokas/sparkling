@@ -8,8 +8,27 @@ mlflow server
 exec bash
 "
 
+# Open third terminal for unity catalog
+gnome-terminal -- bash -c "
+cd unitycatalog
+bin/start-uc-server
+exec bash
+"
+
+# Open fourth terminal for unity catalog ui
+gnome-terminal -- bash -c "
+cd unitycatalog/ui
+yarn install
+yarn start
+exec bash
+"
+
 # Open second terminal for Node server
 gnome-terminal -- bash -c "
 node server
 exec bash
 "
+
+# Start Spark history server
+mkdir -p /tmp/spark-events
+$SPARK_HOME/sbin/start-history-server.sh

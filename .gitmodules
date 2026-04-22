@@ -1,0 +1,3 @@
+[submodule "unitycatalog"]
+	path = unitycatalog
+	url = git@github.com:osrokas/unitycatalog.git
